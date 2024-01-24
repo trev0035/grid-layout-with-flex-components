@@ -6,6 +6,8 @@ body {
   /* EMOJI CARD */
   .emoji {
     display: flex;
+    max-width: 400px;
+    height: auto;
     flex-direction: column;
     border: 1px solid #222;
     border-radius: 8px;
@@ -17,22 +19,16 @@ body {
   .emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
-    order: 2;
-  }
-
-/* CARD TEXT */
-  .emoji p {
-    order: 3;
   }
 
   /* CARD BUTTON */
   .emoji a {
+    margin-top: auto;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    order: 4;
   }
 
   /* EMOJI */
@@ -40,7 +36,7 @@ body {
     display: block;
     font-size: 4rem;
     text-align: center;
-    order: 1;
+    order: -1;
   }
   
 /* CONTAINER - EMOJI CARDS */
@@ -49,6 +45,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     gap: 20px;
+    width: fit-content; 
   }
 
 
